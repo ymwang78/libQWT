@@ -1304,7 +1304,7 @@ QDateTime QwtDateScaleEngine::toDateTime( double value ) const
         const QDate date = ( value <= 0.0 )
             ? QwtDate::minDate() : QwtDate::maxDate();
 
-        dt = QDateTime( date, QTime( 0, 0 ), m_data->timeSpec );
+        dt = QWT_DATETIME_CREATE( date, QTime( 0, 0 ), m_data->timeSpec );
     }
 
     if ( m_data->timeSpec == Qt::OffsetFromUTC )
