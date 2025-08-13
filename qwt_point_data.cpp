@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -127,8 +127,8 @@ QPointF QwtSyntheticPointData::sample( size_t index ) const
     if ( index >= m_size )
         return QPointF( 0, 0 );
 
-    const double xValue = x( index );
-    const double yValue = y( xValue );
+    const double xValue = x( (uint)index );
+    const double yValue = y( (uint)xValue );
 
     return QPointF( xValue, yValue );
 }

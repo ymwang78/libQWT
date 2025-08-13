@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * QwtPolar Widget Library
  * Copyright (C) 2008   Uwe Rathmann
  *
@@ -304,9 +304,9 @@ void QwtPolarCurve::draw( QPainter* painter,
         return;
 
     if ( to < 0 )
-        to = dataSize() - 1;
+        to = (int) dataSize() - 1;
 
-    if ( qwtVerifyRange( dataSize(), from, to ) > 0 )
+    if (qwtVerifyRange((int)dataSize(), from, to) > 0)
     {
         painter->save();
         painter->setPen( m_data->pen );

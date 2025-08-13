@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * QwtPolar Widget Library
  * Copyright (C) 2008   Uwe Rathmann
  *
@@ -347,8 +347,7 @@ void QwtPolarLayout::activate( const QwtPolarPlot* plot,
     invalidate();
 
     QRectF rect( boundingRect ); // undistributed rest of the plot rect
-    rect.adjust( m_data->margin, m_data->margin,
-        -m_data->margin, -m_data->margin );
+    rect.adjust(m_data->margin, m_data->margin, -(int)m_data->margin, -(int)m_data->margin);
 
     // We extract all layout relevant data from the widgets
     // and save them to m_data->layoutData.
