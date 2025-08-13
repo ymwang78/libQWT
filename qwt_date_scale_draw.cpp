@@ -9,6 +9,7 @@
 
 #include "qwt_date_scale_draw.h"
 #include "qwt_text.h"
+#include "qwt_compat.h"
 
 class QwtDateScaleDraw::PrivateData
 {
@@ -273,7 +274,7 @@ QDateTime QwtDateScaleDraw::toDateTime( double value ) const
     {
         dt = dt.addSecs( m_data->utcOffset );
 #if QT_VERSION >= 0x050200
-        dt.setOffsetFromUtc( m_data->utcOffset );
+        QWT_DATETIME_SET_OFFSET_FROM_UTC( dt, m_data->utcOffset );
 #else
         dt.setUtcOffset( m_data->utcOffset );
 #endif

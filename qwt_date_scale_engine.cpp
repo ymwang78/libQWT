@@ -10,6 +10,7 @@
 #include "qwt_date_scale_engine.h"
 #include "qwt_math.h"
 #include "qwt_interval.h"
+#include "qwt_compat.h"
 
 #include <qdatetime.h>
 
@@ -1116,7 +1117,7 @@ QDateTime QwtDateScaleEngine::alignDate(
     if ( dateTime.timeSpec() == Qt::OffsetFromUTC )
     {
 #if QT_VERSION >= 0x050200
-        dt.setOffsetFromUtc( 0 );
+        QWT_DATETIME_SET_OFFSET_FROM_UTC( dt, 0 );
 #else
         dt.setUtcOffset( 0 );
 #endif
@@ -1278,7 +1279,7 @@ QDateTime QwtDateScaleEngine::alignDate(
     if ( dateTime.timeSpec() == Qt::OffsetFromUTC )
     {
 #if QT_VERSION >= 0x050200
-        dt.setOffsetFromUtc( dateTime.offsetFromUtc() );
+        QWT_DATETIME_SET_OFFSET_FROM_UTC( dt, dateTime.offsetFromUtc() );
 #else
         dt.setUtcOffset( dateTime.utcOffset() );
 #endif
@@ -1310,7 +1311,7 @@ QDateTime QwtDateScaleEngine::toDateTime( double value ) const
     {
         dt = dt.addSecs( m_data->utcOffset );
 #if QT_VERSION >= 0x050200
-        dt.setOffsetFromUtc( m_data->utcOffset );
+        QWT_DATETIME_SET_OFFSET_FROM_UTC( dt, m_data->utcOffset );
 #else
         dt.setUtcOffset( m_data->utcOffset );
 #endif
