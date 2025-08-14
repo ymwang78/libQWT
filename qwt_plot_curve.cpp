@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -390,10 +390,9 @@ void QwtPlotCurve::drawSeries( QPainter* painter,
     if ( !painter || numSamples <= 0 )
         return;
 
-    if ( to < 0 )
-        to = numSamples - 1;
+    if (to < 0) to = (int)numSamples - 1;
 
-    if ( qwtVerifyRange( numSamples, from, to ) > 0 )
+    if (qwtVerifyRange((int)numSamples, from, to) > 0)
     {
         painter->save();
         painter->setPen( m_data->pen );
@@ -441,7 +440,7 @@ void QwtPlotCurve::drawCurve( QPainter* painter, int style,
                 // we always need the complete
                 // curve for fitting
                 from = 0;
-                to = dataSize() - 1;
+                to = (int)dataSize() - 1;
             }
             drawLines( painter, xMap, yMap, canvasRect, from, to );
             break;
@@ -1172,7 +1171,7 @@ qreal QwtPlotCurve::interpolatedValueAt( Qt::Orientation orientation, double val
 
         if ( index == -1 )
         {
-            const QPointF last = sample( dataSize() - 1 );
+            const QPointF last = sample((int)dataSize() - 1);
 
             if ( value != last.x() )
                 return qQNaN();
@@ -1194,7 +1193,7 @@ qreal QwtPlotCurve::interpolatedValueAt( Qt::Orientation orientation, double val
 
         if ( index == -1 )
         {
-            const QPointF last = sample( dataSize() - 1 );
+            const QPointF last = sample((int)dataSize() - 1);
 
             if ( value != last.y() )
                 return qQNaN();

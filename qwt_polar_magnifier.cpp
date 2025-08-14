@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * QwtPolar Widget Library
  * Copyright (C) 2008   Uwe Rathmann
  *
@@ -166,5 +166,3 @@ void QwtPolarMagnifier::unzoom()
     plt->setAutoReplot( autoReplot );
     plt->replot();
 }
-
-#include "moc_qwt_polar_magnifier.cpp"

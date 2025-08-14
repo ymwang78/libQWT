@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -506,5 +506,3 @@ const QWidget* QwtMagnifier::parentWidget() const
 {
     return qobject_cast< const QWidget* >( parent() );
 }
-
-#include "moc_qwt_magnifier.cpp"

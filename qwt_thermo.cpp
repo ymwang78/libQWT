@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -1006,5 +1006,3 @@ QRect QwtThermo::alarmRect( const QRect& fillRect ) const
 
     return alarmRect;
 }
-
-#include "moc_qwt_thermo.cpp"

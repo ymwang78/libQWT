@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -844,5 +844,3 @@ QSize QwtKnob::minimumSizeHint() const
 {
     return qwtKnobSizeHint( this, 20 );
 }
-
-#include "moc_qwt_knob.cpp"

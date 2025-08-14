@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -1015,5 +1015,3 @@ QRect QwtSlider::sliderRect() const
 {
     return m_data->sliderRect;
 }
-
-#include "moc_qwt_slider.cpp"

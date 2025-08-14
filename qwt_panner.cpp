@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -538,5 +538,3 @@ void QwtPanner::showCursor( bool on )
     }
 }
 #endif
-
-#include "moc_qwt_panner.cpp"

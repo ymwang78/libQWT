@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -976,5 +976,3 @@ const QwtColorMap* QwtScaleWidget::colorMap() const
 {
     return m_data->colorBar.colorMap;
 }
-
-#include "moc_qwt_scale_widget.cpp"

@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * QwtPolar Widget Library
  * Copyright (C) 2008   Uwe Rathmann
  *
@@ -322,5 +322,3 @@ QPoint QwtPolarCanvas::transform( const QwtPointPolar& polarPos ) const
 
     return pos.toPoint();
 }
-
-#include "moc_qwt_polar_canvas.cpp"

@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * QwtPolar Widget Library
  * Copyright (C) 2008   Uwe Rathmann
  *
@@ -11,6 +11,7 @@
 
 #include "qwt_global.h"
 #include "qwt_picker.h"
+#include "qwt_point_polar.h"
 
 #include <qvector.h>
 #include <qpainterpath.h>

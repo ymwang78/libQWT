@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -321,5 +321,3 @@ QPainterPath QwtPlotCanvas::borderPath( const QRect& rect ) const
 {
     return canvasBorderPath( rect );
 }
-
-#include "moc_qwt_plot_canvas.cpp"

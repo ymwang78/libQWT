@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * QwtPolar Widget Library
  * Copyright (C) 2008   Uwe Rathmann
  *
@@ -1361,5 +1361,3 @@ QwtPolarItem* QwtPolarPlot::infoToItem( const QVariant& itemInfo ) const
 
     return NULL;
 }
-
-#include "moc_qwt_polar_plot.cpp"

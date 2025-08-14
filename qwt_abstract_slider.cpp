@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -831,4 +831,3 @@ void QwtAbstractSlider::sliderChange()
     update();
 }
 
-#include "moc_qwt_abstract_slider.cpp"

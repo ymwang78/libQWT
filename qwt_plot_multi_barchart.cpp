@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -375,8 +375,7 @@ void QwtPlotMultiBarChart::drawSeries( QPainter* painter,
     const QwtScaleMap& xMap, const QwtScaleMap& yMap,
     const QRectF& canvasRect, int from, int to ) const
 {
-    if ( to < 0 )
-        to = dataSize() - 1;
+    if (to < 0) to = (int)dataSize() - 1;
 
     if ( from < 0 )
         from = 0;

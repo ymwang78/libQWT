@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -872,5 +872,3 @@ void QwtDial::sliderChange()
 
     QwtAbstractSlider::sliderChange();
 }
-
-#include "moc_qwt_dial.cpp"

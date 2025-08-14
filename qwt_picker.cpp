@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -1607,5 +1607,3 @@ const QwtWidgetOverlay* QwtPicker::trackerOverlay() const
 {
     return m_data->trackerOverlay;
 }
-
-#include "moc_qwt_picker.cpp"

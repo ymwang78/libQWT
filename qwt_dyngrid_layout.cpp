@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -597,5 +597,3 @@ uint QwtDynGridLayout::numColumns() const
 {
     return m_data->numColumns;
 }
-
-#include "moc_qwt_dyngrid_layout.cpp"

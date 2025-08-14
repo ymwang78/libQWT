@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -106,5 +106,3 @@ void QwtSamplingThread::run()
         }
     }
 }
-
-#include "moc_qwt_sampling_thread.cpp"

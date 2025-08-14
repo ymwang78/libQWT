@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -11,6 +11,11 @@
 #define QWT_GLOBAL_H
 
 #include <qglobal.h>
+#include <QPointF>
+#include <QRectF>
+#include <QPen>
+#include <QFont>
+#include <QPainterPath>
 
 // QWT_VERSION is (major << 16) + (minor << 8) + patch.
 

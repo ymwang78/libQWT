@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -1163,5 +1163,3 @@ QwtPlotItem* QwtPlot::infoToItem( const QVariant& itemInfo ) const
 
     return NULL;
 }
-
-#include "moc_qwt_plot.cpp"

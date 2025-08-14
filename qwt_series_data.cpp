@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -89,8 +89,7 @@ QRectF qwtBoundingRectT( const QwtSeriesData< T >& series, int from, int to )
     if ( from < 0 )
         from = 0;
 
-    if ( to < 0 )
-        to = series.size() - 1;
+    if (to < 0) to = (int)series.size() - 1;
 
     if ( to < from )
         return boundingRect;

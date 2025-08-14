@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -320,7 +320,7 @@ template< typename T, typename LessThan >
 inline int qwtUpperSampleIndex( const QwtSeriesData< T >& series,
     double value, LessThan lessThan  )
 {
-    const int indexMax = series.size() - 1;
+    const int indexMax = (int)series.size() - 1;
 
     if ( indexMax < 0 || !lessThan( value, series.sample( indexMax ) ) )
         return -1;

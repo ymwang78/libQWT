@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -249,5 +249,3 @@ void QwtAnalogClock::drawHand( QPainter* painter, Hand hd,
         needle->draw( painter, center, radius, direction, cg );
     }
 }
-
-#include "moc_qwt_analog_clock.cpp"

@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -38,4 +38,3 @@ int QwtAbstractLegend::scrollExtent( Qt::Orientation orientation ) const
     return 0;
 }
 
-#include "moc_qwt_abstract_legend.cpp"

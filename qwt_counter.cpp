@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -788,5 +788,3 @@ QSize QwtCounter::sizeHint() const
 
     return QSize( w, h );
 }
-
-#include "moc_qwt_counter.cpp"

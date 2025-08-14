@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -1302,5 +1302,3 @@ double QwtWheel::alignedValue( double value ) const
 
     return value;
 }
-
-#include "moc_qwt_wheel.cpp"

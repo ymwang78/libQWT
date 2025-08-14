@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -469,4 +469,3 @@ void QwtAbstractScale::updateScaleDraw()
         m_data->scaleDraw->scaleDiv().upperBound(), m_data->stepSize );
 }
 
-#include "moc_qwt_abstract_scale.cpp"

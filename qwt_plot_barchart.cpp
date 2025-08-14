@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -225,7 +225,7 @@ void QwtPlotBarChart::drawSeries( QPainter* painter,
     const QRectF& canvasRect, int from, int to ) const
 {
     if ( to < 0 )
-        to = dataSize() - 1;
+        to = (int)dataSize() - 1;
 
     if ( from < 0 )
         from = 0;
@@ -426,13 +426,12 @@ QList< QwtLegendData > QwtPlotBarChart::legendData() const
         {
             QwtLegendData data;
 
-            data.setValue( QwtLegendData::TitleRole,
-                QVariant::fromValue( barTitle( i ) ) );
+            data.setValue(QwtLegendData::TitleRole, QVariant::fromValue(barTitle((int)i)));
 
             if ( !legendIconSize().isEmpty() )
             {
                 data.setValue( QwtLegendData::IconRole,
-                    QVariant::fromValue( legendIcon( i, legendIconSize() ) ) );
+                              QVariant::fromValue(legendIcon((int)i, legendIconSize())));
             }
 
             list += data;

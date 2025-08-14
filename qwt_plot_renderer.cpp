@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -1139,5 +1139,3 @@ bool QwtPlotRenderer::exportTo( QwtPlot* plot, const QString& documentName,
 
     return ok;
 }
-
-#include "moc_qwt_plot_renderer.cpp"

@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -389,5 +389,3 @@ QPoint QwtPlotPicker::transform( const QPointF& pos ) const
 
     return p.toPoint();
 }
-
-#include "moc_qwt_plot_picker.cpp"

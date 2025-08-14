@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -470,8 +470,8 @@ static void qwtDrawTube(
         }
         else
         {
-            QwtPainter::drawPolyline( painter, points, size );
-            QwtPainter::drawPolyline( painter, points + size, size );
+            QwtPainter::drawPolyline( painter, points, (int)size );
+            QwtPainter::drawPolyline(painter, points + size, (int)size);
         }
     }
 
@@ -757,8 +757,7 @@ void QwtPlotIntervalCurve::drawSeries( QPainter* painter,
     const QwtScaleMap& xMap, const QwtScaleMap& yMap,
     const QRectF& canvasRect, int from, int to ) const
 {
-    if ( to < 0 )
-        to = dataSize() - 1;
+    if (to < 0) to = (int)dataSize() - 1;
 
     if ( from < 0 )
         from = 0;

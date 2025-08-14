@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -419,5 +419,3 @@ void QwtLegendLabel::keyReleaseEvent( QKeyEvent* e )
 
     QwtTextLabel::keyReleaseEvent( e );
 }
-
-#include "moc_qwt_legend_label.cpp"

@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * QwtPolar Widget Library
  * Copyright (C) 2008   Uwe Rathmann
  *
@@ -479,5 +479,3 @@ bool QwtPolarRenderer::exportTo( QwtPolarPlot* plot,
 
     return true;
 }
-
-#include "moc_qwt_polar_renderer.cpp"

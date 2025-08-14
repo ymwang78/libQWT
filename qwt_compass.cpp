@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -323,5 +323,3 @@ void QwtCompass::keyPressEvent( QKeyEvent* kev )
         QwtDial::keyPressEvent( kev );
     }
 }
-
-#include "moc_qwt_compass.cpp"
