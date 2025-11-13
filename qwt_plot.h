@@ -177,6 +177,9 @@ class QWT_EXPORT QwtPlot : public QFrame, public QwtPlotDict
     void setAxisScaleDiv( QwtAxisId, const QwtScaleDiv& );
     void setAxisScaleDraw( QwtAxisId, QwtScaleDraw* );
 
+    double axisMinValue(QwtAxisId axisId) const;
+    double axisMaxValue(QwtAxisId axisId) const;
+
     double axisStepSize( QwtAxisId ) const;
     QwtInterval axisInterval( QwtAxisId ) const;
     const QwtScaleDiv& axisScaleDiv( QwtAxisId ) const;

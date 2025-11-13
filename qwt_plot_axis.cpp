@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Qwt Widget Library
  * Copyright (C) 1997   Josef Wilgen
  * Copyright (C) 2002   Uwe Rathmann
@@ -315,6 +315,38 @@ QwtScaleDraw* QwtPlot::axisScaleDraw( QwtAxisId axisId )
         return NULL;
 
     return axisWidget( axisId )->scaleDraw();
+}
+
+/*!
+   \brief Return the min value parameter that has been set in setAxisScale.
+
+   This doesn't need to be the min value of the current scale.
+
+   \param axisId Axis
+   \return min value parameter value
+
+   \sa setAxisScale(), QwtScaleEngine::divideScale()
+ */
+double QwtPlot::axisMinValue(QwtAxisId axisId) const {
+    if (!isAxisValid(axisId)) return 0;
+
+    return m_scaleData->axisData(axisId).minValue;
+}
+
+/*!
+   \brief Return the max value parameter that has been set in setAxisScale.
+
+   This doesn't need to be the max value of the current scale.
+
+   \param axisId Axis
+   \return max value parameter value
+
+   \sa setAxisScale(), QwtScaleEngine::divideScale()
+ */
+double QwtPlot::axisMaxValue(QwtAxisId axisId) const {
+    if (!isAxisValid(axisId)) return 0;
+
+    return m_scaleData->axisData(axisId).maxValue;
 }
 
 /*!
