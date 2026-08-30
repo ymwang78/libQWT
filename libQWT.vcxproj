@@ -321,7 +321,7 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeaderFile />
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalOptions>/utf-8 /wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /wd4996 /FS %(AdditionalOptions)</AdditionalOptions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -329,7 +329,7 @@
     <ClCompile>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeaderFile />
-      <AdditionalOptions>/utf-8 /wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /wd4996 /FS %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
   </ItemDefinitionGroup>
